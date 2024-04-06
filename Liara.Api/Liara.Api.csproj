@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TargetFrameworks>net8.0;net6.0</TargetFrameworks>
+    <Version>1.0.1-alpha1</Version>
+  </PropertyGroup>
+  
+  <PropertyGroup Label="Package">
+    <Title>Liara API</Title>
+    <Description>A library for interacting with the Liara API.</Description>
+    <PackageId>Liara.Api</PackageId>
+    <Authors>AliJamshidzadeh</Authors>
+    <PackageIcon>package-icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Liara;Api</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/A1i98/Liara.Api</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/A1i98/Liara.Api.git</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="../package-icon.png">
+      <Pack>true</Pack>
+      <PackagePath>/</PackagePath>
+    </None>
+    <None Include="../README.md">
+      <Pack>true</Pack>
+      <PackagePath>/</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
